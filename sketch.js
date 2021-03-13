@@ -49,6 +49,7 @@ function draw() {
 
   console.log(star.y);
 
+
   if(star.y > 470 && starBody.position.y > 470 ){
   Matter.Body.setStatic(starBody,true);
   }
@@ -59,12 +60,13 @@ function draw() {
 
 function keyPressed() {
 
+  
 if(keyCode === RIGHT_ARROW){
-           fairy.x = fairy.x + 20;
+  fairy.x = fairy.x + 20;
 }
 
-        if(keyCode === LEFT_ARROW){
-           fairy.x = fairy.x - 20;
+if(keyCode === LEFT_ARROW){
+  fairy.x = fairy.x - 20;
 }
 
 if (keyCode === DOWN_ARROW) {
